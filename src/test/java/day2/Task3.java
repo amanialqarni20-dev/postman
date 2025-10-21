@@ -1,4 +1,4 @@
-package Tasks2;
+package day2;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

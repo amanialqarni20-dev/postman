@@ -1,4 +1,4 @@
-package Tasks1;
+package day1;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

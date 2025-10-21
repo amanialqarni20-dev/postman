@@ -1,4 +1,4 @@
-package Tasks1;
+package day1;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
