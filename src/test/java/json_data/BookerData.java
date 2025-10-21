@@ -1,0 +1,19 @@
+package json_data;
+
+public class BookerData {
+
+    public static String bookingJson = """
+            {
+                "firstname": "Josh",
+                "lastname": "Allen",
+                "totalprice": 111,
+                "depositpaid": true,
+                "bookingdates": {
+                    "checkin": "2018-01-01",
+                    "checkout": "2019-01-01"
+                },
+                "additionalneeds": "super bowls"
+            }
+            """;
+
+}

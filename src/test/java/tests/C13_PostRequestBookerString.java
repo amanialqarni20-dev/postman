@@ -1,5 +1,5 @@
 package tests;
-import base_urls.BookersBaseUrl;
+import json_data.BookersBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

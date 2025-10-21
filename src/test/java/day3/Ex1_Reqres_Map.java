@@ -28,12 +28,11 @@ public class Ex1_Reqres_Map {
     @Test
     public void createUserWithMapTest() {
 
-        // 1. Create request body as Map
+
         Map<String, String> requestBody = new HashMap<>();
         requestBody.put("name", "morpheus");
         requestBody.put("job", "leader");
 
-        // 2. Send POST request
         Response postResponse = given()
                 .baseUri("https://reqres.in")
                 .basePath("/api/users")
@@ -43,23 +42,15 @@ public class Ex1_Reqres_Map {
                 .when()
                 .post();
 
-        // 3. Assert status code
         assertEquals(postResponse.getStatusCode(), 201);
 
-        // 4. Print the response
+
         postResponse.prettyPrint();
 
-        // 5. Extract response values and assert
         Map<String, String> responseMap = postResponse.as(Map.class);
         assertEquals(responseMap.get("name"), requestBody.get("name"));
         assertEquals(responseMap.get("job"), requestBody.get("job"));
 
-        // Optional: GET request example (if API supports retrieving created user)
-        // Response getResponse = given()
-        //         .baseUri("https://reqres.in")
-        //         .basePath("/api/users/" + responseMap.get("id"))
-        //         .when()
-        //         .get();
-        // getResponse.prettyPrint();
+
     }
 }

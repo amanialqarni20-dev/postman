@@ -33,10 +33,8 @@ public class Ex1 {
     @Test
     public void createUserTest() {
 
-        // 1. Create request POJO
         UserRequest requestUser = new UserRequest("morpheus", "leader");
 
-        // 2. Send POST request
         Response response = given()
                 .baseUri("https://reqres.in")
                 .basePath("/api/users")
@@ -46,17 +44,13 @@ public class Ex1 {
                 .when()
                 .post();
 
-        // 3. Assert status code
         assertEquals(response.getStatusCode(), 201);
 
-        // 4. Deserialize response to POJO
         UserResponse responseUser = response.as(UserResponse.class);
 
-        // 5. Assertions on response body
         assertEquals(responseUser.getName(), requestUser.getName());
         assertEquals(responseUser.getJob(), requestUser.getJob());
 
-        // Print the response nicely
         response.prettyPrint();
     }
 }
