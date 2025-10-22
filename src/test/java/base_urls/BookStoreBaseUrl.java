@@ -14,5 +14,4 @@ public class BookStoreBaseUrl {
                 .setBaseUri("https://bookstore.demoqa.com")
                 .build();
     }
-
 }
