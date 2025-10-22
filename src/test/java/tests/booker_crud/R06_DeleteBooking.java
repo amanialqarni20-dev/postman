@@ -38,4 +38,3 @@ public class R06_DeleteBooking extends BookerBaseUrl {
                 .body(containsString("Created"));
     }
 }
-R06_DeleteBooking

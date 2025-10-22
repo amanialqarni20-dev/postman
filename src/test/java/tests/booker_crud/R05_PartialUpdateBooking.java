@@ -61,7 +61,7 @@ public class R05_PartialUpdateBooking extends BookerBaseUrl {
                         "firstname", equalTo(payload.get("firstname").asText()),
                         "lastname", equalTo(payload.get("lastname").asText()),
                         "totalprice", equalTo(updatedJson.get("totalprice").asInt())
-                        10 minutes later!
+
                 );
 
 
