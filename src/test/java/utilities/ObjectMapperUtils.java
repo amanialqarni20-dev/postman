@@ -47,5 +47,15 @@ public class ObjectMapperUtils {
         objectNode.put(fieldName, value);
     }
 
+    public static void updateJsonNode(JsonNode payload, String fieldName, boolean value) {
+        ObjectNode objectNode = (ObjectNode) payload;
+        objectNode.put(fieldName, value);
+    }
+
+    public static void removeFieldJsonNode(JsonNode payload, String fieldName) {
+        ObjectNode objectNode = (ObjectNode) payload;
+        objectNode.remove(fieldName);
+    }
+
 
 }

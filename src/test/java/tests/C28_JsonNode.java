@@ -1,6 +1,7 @@
 package tests;
 
-import base_urls.BookerBaseUrl;
+import base_urls.BookersBaseUrl;
+import base_urls.BookersBaseUrl;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
@@ -13,7 +14,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class C28_JsonNode extends BookerBaseUrl {
+public class C28_JsonNode extends BookersBaseUrl {
         /*
         Given
         1) Endpoint: https://restful-booker.herokuapp.com/booking
